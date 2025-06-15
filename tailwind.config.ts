@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,14 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+        sans: ['Manrope', 'sans-serif'],
+      },
 			colors: {
+        'brand-primary': '#C8758E',
+        'brand-secondary': '#FCEFF2',
+        'brand-text': '#4B4B4B',
+        'brand-green': '#25D366',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
