@@ -15,7 +15,7 @@ const Hero = () => {
            <img 
             src="/lovable-uploads/3781fa76-26cd-4682-84b2-547687eeec88.png"
             alt="Happy student" 
-            className="h-64 md:h-80 lg:h-96 w-auto"
+            className="h-[20.8rem] md:h-[26rem] lg:h-[31.2rem] w-auto"
           />
         </div>
       </div>
