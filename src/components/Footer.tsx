@@ -22,7 +22,7 @@ const Footer = () => {
 
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4">
           <p className="text-white/80 text-sm">&copy; {new Date().getFullYear()} Learning-legacy Pte Ltd. All rights reserved.</p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 md:mr-8">
             <a href="#" aria-label="YouTube"><Youtube className="hover:scale-125 transition-transform" /></a>
             <a href="#" aria-label="LinkedIn"><Linkedin className="hover:scale-125 transition-transform" /></a>
           </div>
