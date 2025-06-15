@@ -1,5 +1,6 @@
 
 import { SquareCheckBig } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
 
 const services = [
   {
@@ -41,16 +42,21 @@ const services = [
 ];
 
 const Services = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id="services" className="bg-brand-secondary py-16 md:py-24">
+    <section id="services" ref={ref} className="bg-brand-secondary py-16 md:py-24 overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-text mb-4">Our Learning Services</h2>
-        <p className="text-lg text-brand-text/80 max-w-3xl mx-auto mb-12">
+        <h2 className={`text-3xl md:text-4xl font-bold text-brand-text mb-4 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`}>Our Learning Services</h2>
+        <p className={`text-lg text-brand-text/80 max-w-3xl mx-auto mb-12 ${inView ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
           Comprehensive Learning solutions designed to meet your unique needs and drive measurable outcomes
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <div key={service.title} className="bg-white rounded-xl shadow-lg p-6 text-left flex flex-col">
+          {services.map((service, index) => (
+            <div key={service.title} className={`bg-white rounded-xl shadow-lg p-6 text-left flex flex-col ${inView ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: `${0.4 + index * 0.15}s` }}>
               <img src={service.image} alt={service.title} className="rounded-lg h-48 w-full object-cover mb-6" />
               <div className="flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-brand-text mb-4">{service.title}</h3>
