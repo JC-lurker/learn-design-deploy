@@ -1,6 +1,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const products = [
   {
@@ -65,6 +66,7 @@ const Products = () => {
         </div>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
