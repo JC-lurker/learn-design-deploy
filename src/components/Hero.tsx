@@ -4,7 +4,7 @@ const Hero = () => {
     <section className="bg-hero-gradient text-white overflow-hidden">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-9 md:py-16 px-4 md:px-8 lg:px-16 relative">
         <div className="md:w-1/2 text-center md:text-left z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug mb-4">
             Transform Learning through Innovation and Expertise
           </h1>
           <p className="text-lg md:text-xl text-white/90">
