@@ -1,10 +1,18 @@
 
 import Logo from './Logo';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import ContactForm from './ContactForm';
 
 const navItems = [
   { name: "Services", href: "#services" },
   { name: "Products and Tools", href: "#" },
-  { name: "Contact Us", href: "#" }
 ];
 
 const Header = () => {
@@ -18,6 +26,22 @@ const Header = () => {
               {item.name}
             </a>
           ))}
+          <Dialog>
+            <DialogTrigger asChild>
+              <button className="text-brand-text hover:text-brand-primary transition-colors">
+                Contact Us
+              </button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px]">
+              <DialogHeader>
+                <DialogTitle>Contact Us</DialogTitle>
+                <DialogDescription>
+                  We would love to hear from you. Please fill out the form below.
+                </DialogDescription>
+              </DialogHeader>
+              <ContactForm />
+            </DialogContent>
+          </Dialog>
         </nav>
       </div>
     </header>
