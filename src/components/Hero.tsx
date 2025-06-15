@@ -9,15 +9,15 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-white/90 mb-8">
             We design, develop, and deliver workshops and learning solutions that drive results for individuals and organizations.
           </p>
-          <img
-            src="/lovable-uploads/e697840d-3f4b-42af-97c8-08521a1cd266.png"
-            alt="Decorative element"
-            className="w-1/2 md:w-1/3 mx-auto md:mx-0"
-          />
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end z-10">
            <img src="/lovable-uploads/3781fa76-26cd-4682-84b2-547687eeec88.png" alt="Happy student" className="h-[26rem] md:h-[32.5rem] lg:h-[39rem] w-auto" />
         </div>
+        <img
+            src="/lovable-uploads/e697840d-3f4b-42af-97c8-08521a1cd266.png"
+            alt="Decorative element"
+            className="absolute bottom-0 left-0 w-[200%] md:w-[133.33%] z-0"
+        />
       </div>
     </section>;
 };
