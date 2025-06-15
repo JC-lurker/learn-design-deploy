@@ -1,17 +1,18 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const products = [
   {
     title: "Dialogue Analyser",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "/lovable-uploads/8f6e012b-4d7f-4842-a37c-1fda7bbde255.png",
     description: "Do you have audio recordings or transcripts that need in-depth analysis and reporting? Are you seeking objective feedback on your communication skills when interacting with customers or patients?",
     subDescription: "Let our AI agent, Dialogue Analyser , support you with:",
     features: [
-      "Accurate Transcription – Convert speech to text with precision",
-      "Conversation Analysis & Coding – Identify key themes, tones, and patterns in dialogue",
-      "Competency-Based Reporting – Assess your performance against specific communication competencies",
-      "Personalised Feedback – Gain insights into your strengths, dispositions, and areas for improvement"
+      "Accurate Transcription - Convert speech to text with precision",
+      "Conversation Analysis & Coding - Identify key themes, tones, and patterns in dialogue",
+      "Competency-Based Reporting - Assess your performance against specific communication competencies",
+      "Personalised Feedback - Gain insights into your strengths, dispositions, and areas for improvement"
     ],
     closing: "Enhance your communication strategy with data-driven feedback — tailored to your professional development needs."
   },
@@ -39,19 +40,19 @@ const Products = () => {
             <p className="text-xl text-brand-text/80">(Featured Learning Agents)</p>
           </div>
           <div className="space-y-16">
-            {products.map((product, index) => (
-              <article key={product.title} className={`flex flex-col md:flex-row gap-8 lg:gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                <div className="md:w-1/2">
+            {products.map((product) => (
+              <article key={product.title} className="flex flex-col gap-8 max-w-4xl mx-auto">
+                <div>
                   <img src={product.image} alt={product.title} className="rounded-xl shadow-lg w-full h-auto" />
                 </div>
-                <div className="md:w-1/2 flex flex-col">
+                <div className="flex flex-col">
                   <h2 className="text-3xl font-bold text-brand-text mb-4">{product.title}</h2>
                   <p className="text-brand-text/90 mb-4">{product.description}</p>
                   <p className="text-brand-text/90 mb-4">{product.subDescription}</p>
                   <ul className="space-y-3 mb-6">
                     {product.features.map((feature, fIndex) => (
                       <li key={fIndex} className="flex items-start gap-3">
-                        <span className="text-brand-primary pt-1 text-2xl leading-none">🧩</span>
+                        <span className="text-green-500 pt-1 text-2xl leading-none">🍀</span>
                         <span className="text-brand-text/90">{feature}</span>
                       </li>
                     ))}
