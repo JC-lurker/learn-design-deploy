@@ -1,5 +1,6 @@
 
 import Logo from './Logo';
+import { useLocation } from 'react-router-dom';
 import {
   Dialog,
   DialogContent,
@@ -10,12 +11,14 @@ import {
 } from "@/components/ui/dialog";
 import ContactForm from './ContactForm';
 
-const navItems = [
-  { name: "Services", href: "#services" },
-  { name: "Products and Tools", href: "#" },
-];
-
 const Header = () => {
+  const location = useLocation();
+
+  const navItems = [
+    { name: "Services", href: location.pathname === '/' ? "#services" : "/#services" },
+    { name: "Products and Tools", href: "/products" },
+  ];
+
   return (
     <header className="bg-white py-4 px-4 md:px-8 lg:px-16 sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
