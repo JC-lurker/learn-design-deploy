@@ -1,7 +1,5 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Card, CardContent } from "@/components/ui/card";
 
 const products = [
   {
@@ -40,27 +38,27 @@ const Products = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-brand-text mb-2">Learning Products and Tools</h1>
             <p className="text-xl text-brand-text/80">(Featured Learning Agents)</p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-            {products.map((product) => (
-              <Card key={product.title} className="flex flex-col rounded-xl shadow-lg bg-white">
-                <div className="p-0">
-                  <img src={product.image} alt={product.title} className="rounded-t-xl h-64 w-full object-cover" />
+          <div className="space-y-16">
+            {products.map((product, index) => (
+              <article key={product.title} className={`flex flex-col md:flex-row gap-8 lg:gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                <div className="md:w-1/2">
+                  <img src={product.image} alt={product.title} className="rounded-xl shadow-lg w-full h-auto" />
                 </div>
-                <CardContent className="p-6 flex flex-col flex-grow">
-                  <h2 className="text-2xl font-bold text-brand-text mb-4">{product.title}</h2>
+                <div className="md:w-1/2 flex flex-col">
+                  <h2 className="text-3xl font-bold text-brand-text mb-4">{product.title}</h2>
                   <p className="text-brand-text/90 mb-4">{product.description}</p>
                   <p className="text-brand-text/90 mb-4">{product.subDescription}</p>
                   <ul className="space-y-3 mb-6">
-                    {product.features.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-3">
+                    {product.features.map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-start gap-3">
                         <span className="text-brand-primary pt-1 text-2xl leading-none">🧩</span>
                         <span className="text-brand-text/90">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <p className="text-brand-text/90 mt-auto">{product.closing}</p>
-                </CardContent>
-              </Card>
+                </div>
+              </article>
             ))}
           </div>
         </div>
