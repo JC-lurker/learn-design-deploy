@@ -13,13 +13,11 @@ const Hero = () => {
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end z-10">
            <img 
-            src="https://images.unsplash.com/photo-1541339907198-e08756ded668?q=80&w=1470&auto=format&fit=crop"
+            src="/lovable-uploads/3781fa76-26cd-4682-84b2-547687eeec88.png"
             alt="Happy student" 
-            className="rounded-full object-cover h-64 w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 border-8 border-white/20"
+            className="h-64 md:h-80 lg:h-96 w-auto"
           />
         </div>
-        <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-white/10 rounded-full" />
-        <div className="absolute top-10 -right-20 w-60 h-60 bg-white/10 rounded-full" />
       </div>
     </section>
   );
