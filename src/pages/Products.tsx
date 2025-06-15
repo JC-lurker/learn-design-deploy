@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 const products = [
   {
     title: "Dialogue Analyser",
-    image: "/lovable-uploads/8f6e012b-4d7f-4842-a37c-1fda7bbde255.png",
+    image: "/lovable-uploads/a4ce9549-9226-4b51-b936-bf79679e7ffc.png",
     description: "Do you have audio recordings or transcripts that need in-depth analysis and reporting? Are you seeking objective feedback on your communication skills when interacting with customers or patients?",
     subDescription: "Let our AI agent, Dialogue Analyser , support you with:",
     features: [
@@ -18,7 +18,7 @@ const products = [
   },
   {
     title: "CV Updater",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/lovable-uploads/7bfa7513-eeaa-45a4-be5a-8a6eb92c6c04.png",
     description: "In today’s competitive job market, standing out starts with a CV that truly reflects your strengths — especially in relation to the role you’re applying for. The way you present yourself on your cover page and how you tailor your content to align with the Job Description (JD) can make all the difference.",
     subDescription: "Introducing our CV Updater .",
     features: [
