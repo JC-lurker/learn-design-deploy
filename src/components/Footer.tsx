@@ -3,7 +3,7 @@ import { Youtube, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-brand-primary text-white py-12">
+    <footer className="bg-hero-gradient text-white py-12">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="bg-white/10 rounded-xl p-8 mb-10 text-center">
           <h3 className="text-2xl font-bold mb-2">Privacy Notice</h3>
@@ -29,3 +29,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
