@@ -4,7 +4,7 @@ import { SquareCheckBig } from 'lucide-react';
 const services = [
   {
     title: "Training Programs",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop",
+    image: "/lovable-uploads/4cd14d5f-6d02-4e9c-8e0e-dc2a72c1b490.png",
     descriptionBefore: 'Empower your team with our “Build Your Training Program” initiative — a flexible, customisable solution designed to fit your schedule, goals, and budget. We help you:',
     points: [
       "Create a tailored learning journey aligned with your organisational needs.",
@@ -15,7 +15,7 @@ const services = [
   },
   {
     title: "Expert Learning Design",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop",
+    image: "/lovable-uploads/ab6d3296-9ef8-430c-8815-cd5990a018c9.png",
     descriptionBefore: "Our team brings deep expertise in learning design grounded in both academic excellence and professional certification. We hold:",
     points: [
       "A Master's degree in Instructional Design and Technology.",
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "AI Agents and Analytics",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1470&auto=format&fit=crop",
+    image: "/lovable-uploads/ac96e867-d8cc-4e0a-b752-b234a54da251.png",
     descriptionBefore: "Our AI agents that do more than just streamline tasks.",
     points: [
       "Be empowered with Ai speed and automation.",
