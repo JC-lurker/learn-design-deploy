@@ -1,10 +1,9 @@
-
 import { SquareCheckBig } from 'lucide-react';
 
 const services = [
   {
     title: "Training Programs",
-    image: "/lovable-uploads/4cd14d5f-6d02-4e9c-8e0e-dc2a72c1b490.png",
+    image: "/lovable-uploads/ab6d3296-9ef8-430c-8815-cd5990a018c9.png",
     descriptionBefore: 'Empower your team with our “Build Your Training Program” initiative — a flexible, customisable solution designed to fit your schedule, goals, and budget. We help you:',
     points: [
       "Create a tailored learning journey aligned with your organisational needs.",
@@ -15,7 +14,7 @@ const services = [
   },
   {
     title: "Expert Learning Design",
-    image: "/lovable-uploads/ab6d3296-9ef8-430c-8815-cd5990a018c9.png",
+    image: "/lovable-uploads/4cd14d5f-6d02-4e9c-8e0e-dc2a72c1b490.png",
     descriptionBefore: "Our team brings deep expertise in learning design grounded in both academic excellence and professional certification. We hold:",
     points: [
       "A Master's degree in Instructional Design and Technology.",
