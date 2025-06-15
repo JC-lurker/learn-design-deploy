@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/learnin1/public_html/
+    - /usr/bin/rsync -av --exclude=".git" --delete ./ $DEPLOYPATH
