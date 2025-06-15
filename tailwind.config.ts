@@ -22,6 +22,9 @@ export default {
 			fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(30deg, #bb5980, #d45f78)',
+      },
 			colors: {
         'brand-primary': '#C8758E',
         'brand-secondary': '#FCEFF2',
@@ -102,3 +105,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

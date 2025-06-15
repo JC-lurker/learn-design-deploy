@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section className="bg-brand-primary text-white overflow-hidden">
+    <section className="bg-hero-gradient text-white overflow-hidden">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-16 md:py-24 px-4 md:px-8 lg:px-16 relative">
         <div className="md:w-1/2 text-center md:text-left z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
