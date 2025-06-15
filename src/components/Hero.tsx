@@ -16,7 +16,7 @@ const Hero = () => {
         <img
             src="/lovable-uploads/e697840d-3f4b-42af-97c8-08521a1cd266.png"
             alt="Decorative element"
-            className="absolute bottom-0 left-0 w-[200%] md:w-[133.33%] z-0"
+            className="absolute bottom-0 left-0 w-full md:w-2/3 z-0"
         />
       </div>
     </section>;
