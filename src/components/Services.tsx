@@ -3,31 +3,40 @@ import { SquareCheckBig } from 'lucide-react';
 
 const services = [
   {
-    title: "AI Agility Training Programs",
+    title: "Training Programs",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop",
+    descriptionBefore: 'Empower your team with our “Build Your Training Program” initiative — a flexible, customisable solution designed to fit your schedule, goals, and budget. We help you:',
     points: [
       "Create a tailored learning journey aligned with your organisational needs.",
       "Use the SkillsFuture Framework to ensure clarity, relevance, and measurable outcomes.",
-      "Enhance your training experience with AI-powered learning reports.",
+      "Enhance your training experience with AI-powered learning reports, offering real-time insights into progress, engagement, and performance.",
     ],
+    descriptionAfter: "Discover how adaptive, data-driven learning can transform your workforce. Contact us to learn more about this initiative and how we can support your goals."
   },
   {
     title: "Expert Learning Design",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop",
+    descriptionBefore: "Our team brings deep expertise in learning design grounded in both academic excellence and professional certification. We hold:",
     points: [
       "A Master's degree in Instructional Design and Technology.",
       "An average work experience of at least 5 years in the industry.",
-      "Trust that you're working with top-tier learning designers in Singapore.",
     ],
+    descriptionAfter: "You can trust that you're working with top-tier learning designers in Singapore. Choose from a range of design outputs, and enhance your program with optional cutting-edge features such as AI-powered smart content and AI-driven learning activities. Contact us today for a personalized quote and take the first step toward impactful, future-ready learning experiences."
   },
   {
     title: "AI Agents and Analytics",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1470&auto=format&fit=crop",
+    descriptionBefore: "Our AI agents that do more than just streamline tasks.",
     points: [
-      "Be empowered with AI speed and automation.",
+      "Be empowered with Ai speed and automation.",
       "Improve accuracy with AI agents.",
       "Partner with an AI coach to think deeper, and perform at your best.",
     ],
+    descriptionAfter: "Whether you're looking for ready-to-use analytics tools, customizable options tailored to your unique workflow, or fully bespoke solutions, we’ve got you covered. Ready to unlock your potential?",
+    links: [
+        { text: "Start HERE to view the Standard tools", href: "#" },
+        { text: "Arrange for a email quote", href: "#" }
+    ]
   },
 ];
 
@@ -43,15 +52,32 @@ const Services = () => {
           {services.map((service) => (
             <div key={service.title} className="bg-white rounded-xl shadow-lg p-6 text-left flex flex-col">
               <img src={service.image} alt={service.title} className="rounded-lg h-48 w-full object-cover mb-6" />
-              <h3 className="text-xl font-bold text-brand-text mb-4">{service.title}</h3>
-              <ul className="space-y-3 flex-grow">
-                {service.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <SquareCheckBig className="text-brand-primary w-5 h-5 mt-1 flex-shrink-0" />
-                    <span className="text-brand-text/90">{point}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-brand-text mb-4">{service.title}</h3>
+                
+                {service.descriptionBefore && <p className="text-brand-text/90 mb-4">{service.descriptionBefore}</p>}
+                
+                <ul className="space-y-3 mb-4">
+                  {service.points.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <SquareCheckBig className="text-brand-primary w-5 h-5 mt-1 flex-shrink-0" />
+                      <span className="text-brand-text/90">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                {service.descriptionAfter && <p className="text-brand-text/90 mb-4">{service.descriptionAfter}</p>}
+
+                <div className="mt-auto">
+                  {service.links && (
+                    <div className="pt-4">
+                        {service.links.map((link, index) => (
+                            <a key={index} href={link.href} className="text-brand-primary font-bold hover:underline block mb-2">{link.text}</a>
+                        ))}
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>
