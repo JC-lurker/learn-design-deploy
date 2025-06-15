@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-        sans: ['Manrope', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
 			colors: {
         'brand-primary': '#C8758E',
