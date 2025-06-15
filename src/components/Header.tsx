@@ -1,7 +1,11 @@
 
 import Logo from './Logo';
 
-const navItems = ["Services", "Products and Tools", "Contact Us"];
+const navItems = [
+  { name: "Services", href: "#services" },
+  { name: "Products and Tools", href: "#" },
+  { name: "Contact Us", href: "#" }
+];
 
 const Header = () => {
   return (
@@ -10,8 +14,8 @@ const Header = () => {
         <Logo />
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a key={item} href="#" className="text-brand-text hover:text-brand-primary transition-colors">
-              {item}
+            <a key={item.name} href={item.href} className="text-brand-text hover:text-brand-primary transition-colors">
+              {item.name}
             </a>
           ))}
         </nav>
