@@ -1,8 +1,6 @@
-
 const Hero = () => {
-  return (
-    <section className="bg-hero-gradient text-white overflow-hidden">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-9 md:py-16 px-4 md:px-8 lg:px-16 relative">
+  return <section className="bg-hero-gradient text-white overflow-hidden">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between md:py-16 px-4 md:px-8 lg:px-16 relative py-[32px]">
         <div className="md:w-1/2 text-center md:text-left z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug mb-4">
             Transform Learning through Innovation and Expertise
@@ -12,15 +10,9 @@ const Hero = () => {
           </p>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end z-10">
-           <img 
-            src="/lovable-uploads/3781fa76-26cd-4682-84b2-547687eeec88.png"
-            alt="Happy student" 
-            className="h-[26rem] md:h-[32.5rem] lg:h-[39rem] w-auto"
-          />
+           <img src="/lovable-uploads/3781fa76-26cd-4682-84b2-547687eeec88.png" alt="Happy student" className="h-[26rem] md:h-[32.5rem] lg:h-[39rem] w-auto" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
