@@ -11,7 +11,7 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const recipientEmail = "info@learning-leagcy.org";
+    const recipientEmail = "info@learning-legacy.org";
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
