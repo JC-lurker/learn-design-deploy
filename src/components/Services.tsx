@@ -1,6 +1,15 @@
 
 import { SquareCheckBig } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import ContactForm from './ContactForm';
 
 const services = [
   {
@@ -36,7 +45,7 @@ const services = [
     descriptionAfter: "Whether you're looking for ready-to-use analytics tools, customizable options tailored to your unique workflow, or fully bespoke solutions, we’ve got you covered. Ready to unlock your potential?",
     links: [
         { text: "Start HERE to view the Standard tools", href: "#" },
-        { text: "Arrange for a email quote", href: "#" }
+        { text: "Arrange for an email quote", href: "#", isContactForm: true }
     ]
   },
 ];
@@ -78,7 +87,26 @@ const Services = () => {
                   {service.links && (
                     <div className="pt-4">
                         {service.links.map((link, index) => (
-                            <a key={index} href={link.href} className="text-brand-primary font-bold hover:underline block mb-2">{link.text}</a>
+                            link.isContactForm ? (
+                              <Dialog key={index}>
+                                <DialogTrigger asChild>
+                                  <button className="text-brand-primary font-bold hover:underline block mb-2 text-left">
+                                    {link.text}
+                                  </button>
+                                </DialogTrigger>
+                                <DialogContent className="sm:max-w-[425px]">
+                                  <DialogHeader>
+                                    <DialogTitle>Contact Us</DialogTitle>
+                                    <DialogDescription>
+                                      We would love to hear from you. Please fill out the form below for your quote.
+                                    </DialogDescription>
+                                  </DialogHeader>
+                                  <ContactForm />
+                                </DialogContent>
+                              </Dialog>
+                            ) : (
+                              <a key={index} href={link.href} className="text-brand-primary font-bold hover:underline block mb-2">{link.text}</a>
+                            )
                         ))}
                     </div>
                   )}
