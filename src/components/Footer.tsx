@@ -14,7 +14,7 @@ const Footer = () => {
 
         <div className="flex justify-center mb-10">
           <div className="bg-white rounded-full py-4 px-10 inline-flex items-center gap-x-8 shadow-lg">
-            <a href="#" className="text-brand-text hover:text-brand-primary font-medium transition-colors">Site Link 1</a>
+            <a href="http://www.example.com" className="text-brand-text hover:text-brand-primary font-medium transition-colors">Homepage</a>
             <a href="#" className="text-brand-text hover:text-brand-primary font-medium transition-colors">Site Link 2</a>
             <a href="#" className="text-brand-text hover:text-brand-primary font-medium transition-colors">Site Link 3</a>
           </div>
